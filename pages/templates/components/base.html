@@ -1,0 +1,27 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>{% block title %} {% endblock %}</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{% static 'css/normalize.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/global.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/components/base.css' %}" />
+  </head>
+  <body>
+    <header>
+      <div>
+        <h1>ChefPartner</h1>
+      </div>
+    </header>
+    <div>
+      <nav></nav>
+      <main>{% block content %} {% endblock %}</main>
+    </div>
+    <footer></footer>
+
+    {% block scripts %}{% endblock %}
+  </body>
+</html>

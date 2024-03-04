@@ -1,0 +1,7 @@
+body > header {
+  background-color: #f00;
+  color: #fff;
+  display: inline-block;
+  width: 100%;
+  padding: 0 12px;
+}
